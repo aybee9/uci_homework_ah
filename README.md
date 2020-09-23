@@ -1,1 +1,1 @@
-# This repository will contain all my homework
+# Homework repository
