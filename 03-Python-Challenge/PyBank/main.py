@@ -56,7 +56,7 @@ with open(csvpath) as csvfile:
     print(f'Greatest Increase in Profits: {gr_decrease_month} ${gr_decrease}')
 
 # export to text file
-csv_path = os.path.join('financial_ananlysis.txt')
+csv_path = os.path.join('analysis_pybank','financial_ananlysis.txt')
 
 with open(csv_path, 'w') as fa:
 
