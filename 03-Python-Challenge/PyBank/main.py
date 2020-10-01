@@ -1,28 +1,35 @@
+# import os / csv
 import os
 import csv
 
+# create path to where data is stored to open file
 csvpath = os.path.join('budget_data.csv')
 with open(csvpath) as csvfile:
     csvreader = csv.reader(csvfile, delimiter = ',')
     csv_header = next(csvreader)
 
+    # count total months and sum profit/losses
     total_months = 0
     total_profit_losses = 0
 
+    # calculate changes in monthly prices
     monthly_change = 0
     monthly_profit_losses = 0
     monthly_changes_list = []
 
+    # create variables to store greatest values
     gr_increase = 0
     gr_increase_month = ''
     gr_decrease = 0
 
+    # loop through csv file
     for row in csvreader:
         
         # total months and total profit/losses
         total_months += 1
         total_profit_losses = total_profit_losses + int(row[1])
         
+        # calculate changes in monthly prices
         monthly_change = int(row[1]) - monthly_profit_losses
         monthly_changes_list.append(monthly_change)
         monthly_profit_losses = int(row[1])
@@ -59,18 +66,20 @@ with open(csvpath) as csvfile:
 csv_path = os.path.join('analysis_pybank','financial_ananlysis.txt')
 
 with open(csv_path, 'w') as fa:
-
-    fa.writelines(f'Total months: {total_months}')
+    
+    fa.writelines('Financial Analysis')
     fa.writelines('\n')
-    fa.writelines(f'Total: {total_profit_losses}')
+    fa.writelines('----------------------------')
+    fa.writelines('\n')
+    fa.writelines(f'Total Months: {total_months}')
+    fa.writelines('\n')    
+    fa.writelines(f'Total: ${total_profit_losses}')
     fa.writelines('\n')
     fa.writelines('Average Change: ${:1.2f}'.format(average_change))
     fa.writelines('\n')
-    fa.writelines(f'Greatest Increase in Profits: {gr_increase_month} ${gr_increase}')
+    fa.writelines(f'Greatest Increase in Profits: {gr_increase_month} (${gr_increase})')
     fa.writelines('\n')
-    fa.writelines(f'Greatest Increase in Profits: {gr_decrease_month} ${gr_decrease}')    
-
-
+    fa.writelines(f'Greatest Increase in Profits: {gr_decrease_month} (${gr_decrease})')    
 
 # with open('Analysis.txt', mode = 'w') as f:
 #     f.write(f'Total months: {total_months}')
