@@ -1,4 +1,6 @@
--- QUERIES
+--- QUERIES
+---
+
 -- 3 table join
 -- TOP 10 movies worldwide
 SELECT b.title, b.genre, i.director, t.budget,
