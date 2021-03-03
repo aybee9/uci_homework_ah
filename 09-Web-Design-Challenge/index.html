@@ -8,42 +8,54 @@
         <meta charset="UTF-8">
         <title>Web-Design-Challenge!</title>
         <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
     </head>
 
     <body>
-        <h1 class = 'h1-header'>Weather Summary</h1>
-        <p>In this assignment, we compare how weather changes as you get closer
-            and further from the equator. We gathered weather weather data for over 500
-            cities around the world using the OpenWeatherMap API. We then plotted 
-            our findings using Matplotlib.
-        </p>
-        <img src="assets/images/Fig1.png" alt='Fig1'>
-        <p></p>
-        <br>
-        <div class="box box-1"></div>
+        <section>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-12'>
+                    <h1>Weather Summary</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        In this assignment, we compare how weather changes as you get closer
+                        and further from the equator. We gathered weather data for over 500
+                        cities around the world using the OpenWeatherMap API. We then plotted
+                        our findings using Matplotlib.<br><br>
 
+                        The data we gathered included: latitude, temperatures, tloudiness, and Wind speeds.
+                        All the data gathered is also displayed in a table format. Please refer to 
+                        the link below lableled 'Data Table'
+                    </p>
+                    <br>
+                    <br>
+                    <img src='assets/images/Fig1.png' alt='Fig1' target = "_blank">
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
 
-    <section>
-    <!-- ------------------------------------------------------------------------------------         -->
-    <!-- Linking to other pages -->
-    <!-- ------------------------------------------------------------------------------------         -->
+            <div class='row'>
+                
+                <ul class="nav">
+                    <li class="nav-item">
+                      <a class="nav-link active" href="comparison.html" target="_blank">Plots</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="data.html" target="_blank">Data</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="city_table.html" target="_blank">Data Table</a>
+                    
+                </ul>
 
-    <!-- comparison -->
-    <a href="comparison.html" target="_blank">Comparison</a>
-    <br>
-    <br>
-
-    <!-- data -->
-    <a href="data.html" target="_blank">Data</a>
-    <br>
-    <br>
-
-    <!-- table -->
-    <a href="city_table.html" target="_blank">Table</a>
-    <br>
-    <br>
+            </div>
+        </div>
     </section>
-
     </body>
 </html>
