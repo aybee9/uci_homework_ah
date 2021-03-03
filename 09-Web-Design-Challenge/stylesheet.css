@@ -1,10 +1,6 @@
  /* . for class */
 /* # for id  */
 
-section {
-    background-color: lightblue;
-}
-
 p {
     font-size: 20px;
     text-align: center;
@@ -16,13 +12,29 @@ p {
     font-size: 50px;
 }
 
+section {
+    background-color:lightsteelblue;
+}
+
 /* index */
+.indexc {
+    background-color: lightcoral;
+}
 
 /* data */
+.data-color {
+    background-color:lightyellow;
+}
 
 /* city_table */
+.city-table {
+    color:white;
+}
 
 /* comparison */
+.comparison {
+    background-color: lightblue;
+}
 
 
 /* Different size screens */
