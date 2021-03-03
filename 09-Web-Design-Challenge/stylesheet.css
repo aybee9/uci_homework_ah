@@ -1,0 +1,73 @@
+/* classes are with a period */
+/* id are used with a hashtag */
+
+h1 {
+    color:rgb(65, 86, 158);
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-align: left;    
+}  
+  
+ul {
+    text-align: center;
+    font-size: 35px;
+    color: rgb(27, 183, 189);
+}
+
+li {
+    color: peru;
+}
+
+img {
+    box-shadow: 10px 10px 5px black;
+}
+
+p {
+    font-size: 25px;
+}
+
+section {
+    background-color: cadetblue;
+}
+
+/* Comparison styling */
+/* ------------------------------------------------------------------------- */
+
+.compimg { 
+    display: block;
+    /* border: 10px solid pink; */
+    border-radius: 8px;
+    padding: 10px;
+    opacity: 0.75;
+    box-shadow: 10px 15px black;
+}
+
+/* box */
+.box {
+    width: 200px;
+    height: 200px;
+  }
+
+.box-1 {
+    background: green;
+  }
+
+
+/* Table styling */
+/* ------------------------------------------------------------------------- */
+
+.table-h1 {
+    color:rgb(65, 86, 158);
+    font-size: 60px;
+    margin-bottom: 15px;
+    text-align: left;    
+} 
+
+/* Different size screens */
+
+@media (max-width: 600px) {
+    .box-1 {
+        background: pink;
+    }
+}
+
