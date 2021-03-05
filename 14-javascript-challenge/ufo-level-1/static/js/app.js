@@ -4,7 +4,7 @@ var tdata = d3.select("tbody");
 
 // YOUR CODE HERE!
 
-// retrieving values 
+// retrieving values and to display on site
 tableData.forEach(item => {
     var row = tdata.append('tr');
     Object.entries(item).forEach(([key, value]) => {
@@ -14,6 +14,31 @@ tableData.forEach(item => {
 })
 
 
-// Use a date form in your HTML document and write JavaScript code 
-// that will listen for events and search through the date/time 
-// column to find rows that match user input.
+// filter based on user input 
+// d3 > 09-par-form-filter hw reference
+
+var button = d3.select("#filter-btn");
+button.on("click", function() {  
+    
+    tdata.html(" ");
+ 
+    // select input element and get value property from input element
+    var inputElement = d3.select("#datetime");     
+    var inputValue = inputElement.property("value"); 
+ 
+    console.log(inputValue); 
+    console.log(tableData); 
+ 
+    // filter based on user input 
+    var filterData = tableData.filter(tableData => tableData.datetime === inputValue); 
+    console.log(filterData); 
+ 
+    // show results
+    filterData.forEach(dateData => { 
+        var row = tdata.append("tr"); 
+        Object.entries(dateData).forEach(([key, value]) => { 
+            var cell = tdata.append("td"); 
+            cell.text(value); 
+        })
+    })
+})
