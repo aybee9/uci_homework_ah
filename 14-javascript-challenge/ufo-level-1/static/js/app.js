@@ -20,7 +20,7 @@ tableData.forEach(item => {
 var button = d3.select("#filter-btn");
 button.on("click", function() {  
     
-    tdata.html(" ");
+    tdata.html("");
  
     // select input element and get value property from input element
     var inputElement = d3.select("#datetime");     
