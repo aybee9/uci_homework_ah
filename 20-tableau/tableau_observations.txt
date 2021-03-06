@@ -5,3 +5,5 @@ In this data, we saw that when we sort by customer, we see that Hamilton Park ha
 2. End Station Name
 
 In this data we see that the longest trip time is still Liberty Light Rail. However, Hamilton is no longer the second longest. Riverview park now has the second longest trip duration. 
+
+3. In the days graph, we see that on average, Thursday has the longest trips for bikes. 
