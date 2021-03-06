@@ -1,0 +1,7 @@
+1. Start Station Name
+
+In this data, we saw that when we sort by customer, we see that Hamilton Park has the longest trip duration. When filtered by subscriber, Liberty Light Rail has the longest trip duration. If we disregard user type, we see that Liberty Light Rail has a longer trip duration than Hamilton Park by a small amount of time. All other starting stations have similar trip duration when compared to these two. 
+
+2. End Station Name
+
+In this data we see that the longest trip time is still Liberty Light Rail. However, Hamilton is no longer the second longest. Riverview park now has the second longest trip duration. 
